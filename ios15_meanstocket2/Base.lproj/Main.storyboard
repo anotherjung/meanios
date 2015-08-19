@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios15_meanstocket2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlg-lp-FiK" userLabel="leftButton">
+                                <rect key="frame" x="20" y="20" width="281" height="580"/>
+                                <color key="backgroundColor" red="0.95613684048147074" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="leftBtn"/>
+                                <connections>
+                                    <action selector="leftBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rN2-05-sXw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgn-4k-nEZ" userLabel="rightButton">
+                                <rect key="frame" x="284" y="41" width="321" height="580"/>
+                                <color key="backgroundColor" red="1" green="0.50958203746911324" blue="0.059792024893041806" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="rightBtn"/>
+                                <connections>
+                                    <action selector="rightBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mB5-Rz-xoA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="pgn-4k-nEZ" secondAttribute="trailing" id="2g7-aZ-lM0"/>
+                            <constraint firstItem="pgn-4k-nEZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="8d6-nm-Ko5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pgn-4k-nEZ" secondAttribute="trailing" constant="41" id="G5T-C7-NN5"/>
+                            <constraint firstItem="vlg-lp-FiK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="IF2-n6-Os1"/>
+                            <constraint firstItem="pgn-4k-nEZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Izc-rY-Dhu"/>
+                            <constraint firstItem="vlg-lp-FiK" firstAttribute="width" secondItem="pgn-4k-nEZ" secondAttribute="width" id="NjA-EQ-qNR"/>
+                            <constraint firstItem="vlg-lp-FiK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Q7M-8h-1oO"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="vlg-lp-FiK" secondAttribute="leading" id="ThE-Y3-Nqv"/>
+                            <constraint firstItem="pgn-4k-nEZ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="bxR-1D-c3M"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pgn-4k-nEZ" secondAttribute="bottom" id="e8G-dy-viZ"/>
+                            <constraint firstItem="pgn-4k-nEZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gSa-3m-HJY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pgn-4k-nEZ" secondAttribute="bottom" id="i0l-ij-jdV"/>
+                            <constraint firstItem="pgn-4k-nEZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ixe-h9-bZL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vlg-lp-FiK" secondAttribute="bottom" id="khJ-7C-NvV"/>
+                            <constraint firstItem="pgn-4k-nEZ" firstAttribute="leading" secondItem="vlg-lp-FiK" secondAttribute="trailing" constant="1" id="x3V-0U-Wh4"/>
+                            <constraint firstItem="vlg-lp-FiK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zlJ-6q-lUO"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="IF2-n6-Os1"/>
+                                <exclude reference="zlJ-6q-lUO"/>
+                                <exclude reference="G5T-C7-NN5"/>
+                                <exclude reference="Izc-rY-Dhu"/>
+                                <exclude reference="bxR-1D-c3M"/>
+                                <exclude reference="gSa-3m-HJY"/>
+                                <exclude reference="ixe-h9-bZL"/>
+                                <exclude reference="e8G-dy-viZ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="389"/>
+        </scene>
+    </scenes>
+</document>
